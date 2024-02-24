@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+}
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.left {
+  flex: 1;
+  background-image: linear-gradient(
+    to bottom right,
+    #43709c,
+    #71bea6,
+    #eda070,
+    #e0ad6e,
+    #c75b83
+  );
+  position: relative;
+  border-radius: 20px 0 0 20px;
+}
+
+#img {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  bottom: 1%;
+  right: -20%;
+  transform: rotate(-10deg);
+}
+
+#cloud1 {
+  height: 150px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+#cloud2 {
+  height: 150px;
+  top: 3%;
+  left: 50%;
+  position: absolute;
+}
+
+.right {
+  flex: 1;
+  background: #232326;
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+}
+
+.right h1 {
+  color: white;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form .icon{
+    position: relative;
+}
+
+form .icon i{
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+form input {
+  padding: 20px 20px 20px 30px;
+  margin: 20px;
+  height: 50px;
+  width: 300px;
+  background: #232326;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+form input:focus{
+  background-image: linear-gradient(rgba(0, 0, 0), rgb(29, 29, 29)),
+    linear-gradient(to right, #488a8c, #946541, #9a485f);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+    border: 2px solid transparent;
+}
+
+
+form input::placeholder{
+    padding-left: 10px;
+}
+
+
+form button {
+  margin: 20px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: #232326;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+form button:hover{
+  background-image: linear-gradient(
+    to right,
+    #43709c,
+    #71bea6,
+    #eda070,
+    #e0ad6e,
+    #c75b83
+  );
+}
+
+.right h5{
+    color: rgba(143, 138, 138, 0.695);
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts button {
+  height: 50px;
+  width: 50px;
+  background: #232326;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+}
+
+.contacts button i{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+.container{
+    padding: 10px;
+}
+
+.left{
+    display: none;
+}
+
+.right{
+    border-radius: 10px;
+    width: 350px;
+    height: 650px;
+}
+
+.right h1{
+    font-size: 40px;
+}
+
+form input{
+    width: 250px;
+}
+
+form button{
+    width: 250px;
+}
+
+
+}
+    
